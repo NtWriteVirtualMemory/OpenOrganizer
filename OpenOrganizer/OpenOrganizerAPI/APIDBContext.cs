@@ -21,7 +21,7 @@ namespace OpenOrganizerAPI
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite(@"Data Source=L:\OpenOrganizer.db");
+            optionsBuilder.UseSqlite(@"Data Source=.\OpenOrganizer.db");
         }
 
         public DbSet<Category> Categories { get; set; }
